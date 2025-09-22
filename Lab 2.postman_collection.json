@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "67d1f22f-b678-434e-a5df-9ecf5cf72a32",
+		"name": "Lab 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48436326",
+		"_collection_link": "https://alexandrelau-lei-8657454.postman.co/workspace/Alexandre-Lau's-Team's-Workspac~e28821c6-f1c1-45da-8c02-766cb21b82e7/collection/48436326-67d1f22f-b678-434e-a5df-9ecf5cf72a32?action=share&source=collection_link&creator=48436326"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": []
+		},
+		{
+			"name": "Companies",
+			"item": []
+		},
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"Gaming Laptop\",\r\n\"description\": \"High performance laptop with RTX graphics\",\r\n\"sku\": \"LAP-RTX-4090\",\r\n\"price\": 2499.99,\r\n\"stock\": 15, \r\n\"currency\": \"EUR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Products",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
