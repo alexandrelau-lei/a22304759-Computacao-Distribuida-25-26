@@ -57,6 +57,7 @@ public class ProductService {
         return repo.save(existing);
     }
 
+
     public void deleteProduct(UUID id) {
         if (!repo.findById(id).isPresent()) {
             throw new ProductNotFoundException(id);
